@@ -1,3 +1,23 @@
+* {
+    box-sizing: border-box;
+    max-width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --color-white: hsl(0, 0%, 100%);
+    --color-rose-white: hsl(330, 100%, 98%);
+    --color-eggshell: hsl(30, 54%, 90%);
+    --color-light-grey: hsl(30, 18%, 87%);
+    --color-wenge-brown: hsl(30, 10%, 34%);
+    --color-dark-charcoal: hsl(24, 5%, 18%);
+}
+
+body {
+    font-family: Outfit, sans-serif;
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
