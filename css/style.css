@@ -16,6 +16,19 @@
 
 body {
     font-family: Outfit, sans-serif;
+    background-color: var(--color-eggshell);
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    padding: 10vw;
+  }
+}
+
+.container {
+  max-width: max(50%, 375px);
+  background-color: white;
+  margin-inline: auto;
 }
 
 .attribution {
