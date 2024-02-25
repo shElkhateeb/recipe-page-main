@@ -49,12 +49,6 @@ h2 {
   color: var(--color-nutmeg);
 }
 
-.box h2 {
-  font-size: 1.5em;
-  font-family: inherit;
-  color: var(--color-dark-raspberry);
-}
-
 h3 {
   display: inline;
   font-size: 1em;
@@ -81,6 +75,28 @@ th {
 td {
   font-weight: 700;
 }
+
+/*preparation time*/
+.box {
+  background-color: var(--color-rose-white);
+  padding: var(--padding);
+  border-radius: 1vw;
+  -webkit-border-radius: 1vw;
+  -moz-border-radius: 1vw;
+  -ms-border-radius: 1vw;
+  -o-border-radius: 1vw;
+}
+
+.box h2 {
+  font-size: 1.5em;
+  font-family: inherit;
+  color: var(--color-dark-raspberry);
+}
+
+.box span {
+  font-weight: 700;
+}
+/*end preparation time*/
 
 .attribution {
   font-size: 11px;
