@@ -21,7 +21,7 @@ body {
 
 @media screen and (min-width: 768px) {
   body {
-    padding: 10vw;
+    padding: 10vw 0;
   }
 }
 
