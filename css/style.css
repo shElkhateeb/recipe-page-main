@@ -19,6 +19,7 @@
 
 body {
     font-family: Outfit, sans-serif;
+    color: var(--color-dark-charcoal);
     background-color: var(--color-eggshell);
     line-height: 1.5em;
 }
