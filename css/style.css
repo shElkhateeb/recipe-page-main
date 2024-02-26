@@ -1,27 +1,26 @@
 * {
-    box-sizing: border-box;
-    max-width: 100%;
-    padding: 0;
-    margin: 0;
+  box-sizing: border-box;
+  max-width: 100%;
+  padding: 0;
+  margin: 0;
 }
 
 :root {
-    --color-nutmeg: hsl(14, 45%, 36%);
-    --color-dark-raspberry: hsl(332, 51%, 32%);
-    --color-white: hsl(0, 0%, 100%);
-    --color-rose-white: hsl(330, 100%, 98%);
-    --color-eggshell: hsl(30, 54%, 90%);
-    --color-light-grey: hsl(30, 18%, 87%);
-    --color-wenge-brown: hsl(30, 10%, 34%);
-    --color-dark-charcoal: hsl(24, 5%, 18%);
-    --padding: 2vw;
+  --color-nutmeg: hsl(14, 45%, 36%);
+  --color-dark-raspberry: hsl(332, 51%, 32%);
+  --color-rose-white: hsl(330, 100%, 98%);
+  --color-eggshell: hsl(30, 54%, 90%);
+  --color-light-grey: hsl(30, 18%, 87%);
+  --color-wenge-brown: hsl(30, 10%, 34%);
+  --color-dark-charcoal: hsl(24, 5%, 18%);
+  --padding: 2vw;
 }
 
 body {
-    font-family: Outfit, sans-serif;
-    color: var(--color-dark-charcoal);
-    background-color: var(--color-eggshell);
-    line-height: 1.5em;
+  font-family: Outfit, sans-serif;
+  color: var(--color-dark-charcoal);
+  background-color: var(--color-eggshell);
+  line-height: 1.5em;
 }
 
 .container {
@@ -36,19 +35,17 @@ section {
 
 h1,
 h2 {
+  font-family: "Young Serif", sans-serif;
   padding-bottom: var(--padding);
 }
 
 h1 {
   font-size: calc(1.7em + 1vw);
-  font-family: "Young Serif", sans-serif;
-  color: var(--color-dark-charcoal);
   line-height: 1.8em;
 }
 
 h2 {
   font-size: 1.8em;
-  font-family: "Young Serif", sans-serif;
   color: var(--color-nutmeg);
 }
 
@@ -115,7 +112,7 @@ td {
   border-bottom: 1px solid var(--color-light-grey);
 }
 tr:last-child th,
-tr:last-child td{
+tr:last-child td {
   border: none;
 }
 th {
@@ -156,7 +153,7 @@ td {
     -moz-border-radius: 1vw;
     -ms-border-radius: 1vw;
     -o-border-radius: 1vw;
-}
+  }
 
   section {
     padding: var(--padding) 0;
