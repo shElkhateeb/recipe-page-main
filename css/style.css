@@ -65,6 +65,18 @@ table {
   padding-left: 22px;
 }
 
+li {
+  margin: 0.5em;
+}
+
+li::marker {
+  color: var(--color-nutmeg);
+}
+
+ol li::marker {
+  font-weight: bold;
+}
+
 /*preparation time*/
 .box {
   background-color: var(--color-rose-white);
@@ -81,7 +93,9 @@ table {
   font-family: inherit;
   color: var(--color-dark-raspberry);
 }
-
+.box li::marker {
+  color: var(--color-dark-raspberry);
+}
 .box span {
   font-weight: 700;
 }
