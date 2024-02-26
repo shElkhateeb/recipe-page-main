@@ -151,10 +151,11 @@ main > section:nth-child(3) {
   }
 
   img {
-    border-radius: 1vw;
-    -webkit-border-radius: 1vw;
-    -moz-border-radius: 1vw;
-    -ms-border-radius: 1vw;
-    -o-border-radius: 1vw;
+    border-radius: calc(var(--margin) * 1.3);
+    -webkit-border-radius: calc(var(--margin) * 1.3);
+    -moz-border-radius: calc(var(--margin) * 1.3);
+    -ms-border-radius: calc(var(--margin) * 1.3);
+    -o-border-radius: calc(var(--margin) * 1.3);
+    border: var(--margin) solid white;
   }
 }
