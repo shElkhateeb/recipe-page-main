@@ -20,6 +20,7 @@
 body {
     font-family: Outfit, sans-serif;
     background-color: var(--color-eggshell);
+    line-height: 1.5em;
 }
 
 .container {
