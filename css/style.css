@@ -14,6 +14,7 @@
   --color-wenge-brown: hsl(30, 10%, 34%);
   --color-dark-charcoal: hsl(24, 5%, 18%);
   --padding: 2vw;
+  --margin: calc(2vw + 25px);
 }
 
 body {
@@ -30,7 +31,9 @@ body {
 }
 
 section {
-  padding: var(--padding) 4vw;
+  width: calc(100% - var(--margin) * 2);
+  margin: 0 auto;
+  padding: var(--margin) 0;
 }
 
 h1,
@@ -41,12 +44,13 @@ h2 {
 
 h1 {
   font-size: calc(1.7em + 1vw);
-  line-height: 1.8em;
+  line-height: 1.2em;
 }
 
 h2 {
   font-size: 1.8em;
   color: var(--color-nutmeg);
+  padding-bottom: var(--margin);
 }
 
 h3 {
@@ -59,8 +63,7 @@ h3 + p {
 }
 
 ol,
-ul,
-table {
+ul {
   padding-left: 22px;
 }
 
@@ -103,17 +106,13 @@ ol li::marker {
 /* table */
 table {
   width: 100%;
+  border-spacing: 0;
   text-align: left;
   padding-top: var(--padding);
 }
 th,
 td {
   padding: 1em;
-  border-bottom: 1px solid var(--color-light-grey);
-}
-tr:last-child th,
-tr:last-child td {
-  border: none;
 }
 th {
   font-weight: 100;
@@ -121,6 +120,12 @@ th {
 td {
   font-weight: 700;
   color: var(--color-nutmeg);
+}
+tr:not(:last-child) th,
+tr:not(:last-child) td,
+main > section:nth-child(2),
+main > section:nth-child(3) {
+  border-bottom: 1px solid var(--color-light-grey);
 }
 /* end table */
 
@@ -138,7 +143,6 @@ td {
   }
 
   .container {
-    padding: 3vw;
     border-radius: 1.5vw;
     -webkit-border-radius: 1.5vw;
     -moz-border-radius: 1.5vw;
@@ -146,16 +150,11 @@ td {
     -o-border-radius: 1.5vw;
   }
 
-  container,
   img {
     border-radius: 1vw;
     -webkit-border-radius: 1vw;
     -moz-border-radius: 1vw;
     -ms-border-radius: 1vw;
     -o-border-radius: 1vw;
-  }
-
-  section {
-    padding: var(--padding) 0;
   }
 }
