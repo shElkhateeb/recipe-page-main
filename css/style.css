@@ -68,22 +68,26 @@ h3 + p {
   display: inline;
 }
 
+/* start lists */
 ol,
 ul {
-  padding-left: 22px;
+  padding-left: 40px;
+  list-style: none;
+  position: relative;
+}
+
+li::before {
+  content: "•";
+  color: var(--color-nutmeg);
+  font-weight: bold;
+  position: absolute;
+  left: 5px;
 }
 
 li:not(:last-child) {
   margin-bottom: 0.5em;
 }
-
-li::marker {
-  color: var(--color-nutmeg);
-}
-
-ol li::marker {
-  font-weight: bold;
-}
+/* end lists */
 
 /*preparation time*/
 .box {
@@ -100,7 +104,7 @@ ol li::marker {
   font-family: inherit;
   color: var(--color-dark-raspberry);
 }
-.box li::marker {
+.box li::before {
   color: var(--color-dark-raspberry);
 }
 .box span {
