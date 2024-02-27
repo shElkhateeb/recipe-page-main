@@ -84,6 +84,14 @@ li::before {
   left: 5px;
 }
 
+ol {
+  counter-reset: step;
+}
+ol li::before {
+  counter-increment: step;
+  content: counter(step) ".";
+}
+
 li:not(:last-child) {
   margin-bottom: 0.5em;
 }
