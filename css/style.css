@@ -33,24 +33,30 @@ body {
 section {
   width: calc(100% - var(--margin) * 2);
   margin: 0 auto;
+}
+
+section:not(.box-container, img ~ section) {
   padding: var(--margin) 0;
+}
+
+img ~ section {
+  padding-bottom: var(--margin);
 }
 
 h1,
 h2 {
   font-family: "Young Serif", sans-serif;
-  padding-bottom: var(--padding);
+  line-height: 1em;
+  padding-bottom: var(--margin);
 }
 
 h1 {
   font-size: calc(1.7em + 1vw);
-  line-height: 1.2em;
 }
 
 h2 {
   font-size: 1.8em;
   color: var(--color-nutmeg);
-  padding-bottom: var(--margin);
 }
 
 h3 {
@@ -67,8 +73,8 @@ ul {
   padding-left: 22px;
 }
 
-li {
-  margin: 0.5em;
+li:not(:last-child) {
+  margin-bottom: 0.5em;
 }
 
 li::marker {
@@ -89,7 +95,6 @@ ol li::marker {
   -ms-border-radius: 1vw;
   -o-border-radius: 1vw;
 }
-
 .box h2 {
   font-size: 1.5em;
   font-family: inherit;
